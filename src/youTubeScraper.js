@@ -25,8 +25,8 @@ const fs = require('fs');
 
 const videoTitle = await page.evaluate(() => document.querySelector('h1').textContent.toString());
 const channelName = await page.evaluate(() => document.querySelector('#text-container.ytd-channel-name').textContent.toString());
-    fs.writeFileSync('C:/Users/eazzy/Desktop/WebParser/title.txt', videoTitle);
-    fs.writeFileSync('C:/Users/eazzy/Desktop/WebParser/channelName.txt', channelName);
+    fs.writeFileSync('C:/Users/user/Desktop/WebParser/title.txt', videoTitle);
+    fs.writeFileSync('C:/Users/user/Desktop/WebParser/channelName.txt', channelName);
     console.log(videoTitle);
     console.log(channelName);
     await browser.close();
